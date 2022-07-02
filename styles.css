@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+.container{
+    background-image: url(/images/bg-desktop.svg);
+    background-position: center;
+    object-fit: cover;
+    background-size: 100%;
+    background-color: hsl(257, 40%, 49%);
+}
+header{
+    padding: 2rem 3rem;
+}
+.logo{
+    width: 180px;
+    cursor: pointer;
+}
+.body-container{
+    padding: 2rem 3rem;
+    padding-bottom: 80px;
+}
+.body-content-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    /* padding: 0; */
+}
+.img{
+    width: 100%;
+}
+.two{
+    padding: 2rem;
+}
+.hide-on-mobile{
+    display: block;
+}
+h1{
+    font-size: 40px;
+    color: #fff;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: 600;
+}
+p{
+    padding: 18px 0;
+    font-size: 19px;
+    color: rgb(233, 229, 229);
+}
+.btn{
+    padding: 15px 11%;
+    border-radius: 30px;
+    border: none;
+    font-size: 1rem;
+    color: #fff;
+    background-color: hsl(300, 69%, 71%);
+    box-shadow: 5px 10px 10px rgb(55, 50, 50);
+}
+.btn:hover{
+    transform: scale(1.1);
+}
+.social-media{
+    justify-content: right;
+    width: 100%;
+    padding: 0 3rem;
+}
+.social-media, .social-media-icon{
+    display: flex;
+    padding: 10px;
+    float: right;
+    gap: 10px;
+}
+.social-media-icon{
+    border-radius: 50%;
+    border: 1px solid;
+    border-color: white;
+    background: none;
+    width: 25px;
+    height: 25px;
+}
+.icon{
+   text-align: center;
+   padding-top: 5px;
+   padding-left: 7px;
+   color: #fff;
+}
+.social-media-icon:hover{
+    border-color: hsl(300, 69%, 71%);
+}
+.social-media-icon:hover .icon{
+    color: hsl(300, 69%, 71%);
+}
+
+/* Media queries */
+@media only screen and (max-width:950px){
+    .body-content-container{
+        display: block;
+    }
+    h1{
+        font-size: 25px;
+        text-align: center;
+    }
+    p{
+        font-size: 19px;
+        text-align: center;
+    }
+    .two{
+        padding: 0;
+        padding-top: 50px;
+    }
+    .social-media{
+        justify-content: center;
+        padding: 20px 20px;
+        margin-left: 50px;
+    }
+    .hide-on-mobile{
+        display: inline;
+    }
+    .btn{
+        padding: 15px 25%;
+    }
+    .btn-container{
+        justify-content: center;
+        padding: 20px 0;
+        align-items: center;
+        text-align: center;
+    }
+}
